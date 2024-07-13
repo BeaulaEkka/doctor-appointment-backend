@@ -29,6 +29,15 @@ module.exports = [
     },
   },
 
+  {
+    name: "strapi::cors",
+    config: {
+      origin: ["https://your-vercel-domain.vercel.app"], // Replace with your actual Vercel domain
+      methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+      headers: ["Content-Type", "Authorization", "Origin", "Accept"],
+    },
+  },
+
   "strapi::cors",
   "strapi::poweredBy",
   "strapi::query",
